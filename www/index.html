@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Robot</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="/styles/vendor/normalize.css">
+  <link rel="stylesheet" href="/styles/app.css">
+</head>
+<body>
+  <canvas id="my-robot-canvas">
+    Sorry.  Your browser does not support the canvas element.  Please upgrade your browser to use this website.
+  </canvas>
+
+  <script type="module">
+    import {Application} from './scripts/app.js'
+    const canvas = document.getElementById('my-robot-canvas')
+    const app = Application.new(canvas)
+    app.run()
+  </script>
+</body>
+</html>

@@ -4,7 +4,10 @@
   "description": "A pet robot simulator",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test/"
+    "test": "mocha test/",
+    "build": "rollup src/app.js --file www/scripts/app.js --format es",
+    "watch": "watch 'npm run build' src --wait=5",
+    "serve": "serve www"
   },
   "repository": {
     "type": "git",
@@ -29,7 +32,10 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "mocha": "^7.1.1",
-    "standard": "^14.3.3"
+    "rollup": "^2.1.0",
+    "serve": "^11.3.0",
+    "standard": "^14.3.3",
+    "watch": "^1.0.2"
   },
   "homepage": "https://github.com/lkhbggbg/my-robot#readme"
 }

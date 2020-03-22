@@ -9,4 +9,13 @@ globals:
   SharedArrayBuffer: readonly
 parserOptions:
   ecmaVersion: 2018
-rules: {}
+rules: 
+  comma-dangle:
+    - error
+    -
+      arrays: always-multiline
+      objects: always-multiline
+      imports: always-multiline
+      exports: always-multiline
+      functions: only-multiline
+
